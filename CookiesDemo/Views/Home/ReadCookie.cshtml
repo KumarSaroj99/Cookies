@@ -1,0 +1,37 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ReadCookie</title>
+</head>
+<body>
+    <div>
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Create Cookie", "CreateCookie", "Home")</li>
+            <li>@Html.ActionLink("Read Cookie", "ReadCookie", "Home")</li>
+            <li>@Html.ActionLink("Delete Cookie", "DeleteCookie", "Home")</li>
+        </ul>
+
+        @{
+            ViewBag.Title = "Read Cookie";
+        }
+        @if (ViewBag.UserName != null)
+        {
+            <h2>Cookie Details:</h2>
+            <p>User Name: @ViewBag.UserName</p>
+            <p>Email: @ViewBag.Email</p>
+        }
+        else
+        {
+            <h2>@ViewBag.Message</h2>
+        }
+
+    </div>
+</body>
+</html>

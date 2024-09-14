@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DeleteCookie</title>
+</head>
+<body>
+    <div>
+        @{
+            ViewBag.Title = "Delete Cookie";
+        }
+        <h2>@ViewBag.Message</h2>
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Create Cookie", "CreateCookie", "Home")</li>
+            <li>@Html.ActionLink("Read Cookie", "ReadCookie", "Home")</li>
+            <li>@Html.ActionLink("Delete Cookie", "DeleteCookie", "Home")</li>
+        </ul>
+
+
+    </div>
+</body>
+</html>
